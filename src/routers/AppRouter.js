@@ -1,21 +1,19 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Routes,
+  Switch,
   Route
 } from 'react-router-dom';
-import { Navbar } from '../components/ui/Navbar';
+import { DashboardRouters } from './DashboardRouters';
 
 export const AppRouter = () => {
     return (
         <Router>
             <div>
-                <Navbar />
-
-                <Routes>
+                <Switch>
                     <Route exact path='/login'/>
-                    <Route exact path='/'/>
-                </Routes>
+                    <Route path='/' component={ DashboardRouters }/>
+                </Switch>
             </div>
         </Router>
     );
