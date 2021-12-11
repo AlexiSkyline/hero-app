@@ -4,9 +4,9 @@ import { HeroList } from '../heroes/HeroList';
 export const MarvelScreen = () => {
     return (
         <div>
-            <h1>Marvel Screen</h1>
+            <img src={ './assets/logos/Marvel_Logo.png' } style={{ maxWidth: 200 }} alt='Marvel Logo' />
             <hr/>
-            <HeroList publisher='DC Comics'/>
+            <HeroList publisher='Marvel Comics'/>
         </div>
     );
 }

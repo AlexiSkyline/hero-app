@@ -1,10 +1,10 @@
 import React from 'react';
 import { HeroList } from '../heroes/HeroList';
 
-export const DCScreen = () => {
+export const DcScreen = () => {
     return (
         <div>
-            <h1>Marvel Screen</h1>
+            <img src={ './assets/logos/DC_Comics_Logo.png' } style={{ maxWidth: 150 }} alt='DC Comics Logo' />
             <hr/>
             <HeroList publisher='DC Comics'/>
         </div>
