@@ -7,7 +7,7 @@ export const DashboardRouters = () => {
         <>
             <Navbar/>
 
-            <div>
+            <div className='container mt-2'>
                 <Switch>
                     <Route exact path='/marvel'/>
                     <Route exact path='/heroe/:heroId'/>
