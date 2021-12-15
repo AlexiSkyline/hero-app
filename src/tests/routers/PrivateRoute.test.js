@@ -1,3 +1,4 @@
+import React from 'react';
 import { mount } from 'enzyme';
 import { MemoryRouter } from 'react-router-dom';
 import { PrivateRoute } from '../../routers/PrivateRoute';
@@ -38,6 +39,6 @@ describe( 'Test in <PrivateRoute />', () => {
             </MemoryRouter>
         );
 
-         expect( wrapper.find( 'span' ).exists() ).toBe( false );
+        expect( wrapper.find( 'span' ).exists() ).toBe( false );
     });
 });
