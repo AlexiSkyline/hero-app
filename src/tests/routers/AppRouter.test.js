@@ -4,7 +4,7 @@ import { AppRouter } from '../../routers/AppRouter';
 
 describe( 'Test in <AppRouter />', () => {
     let contextValue = {
-        dispacth: jest.fn(),
+        dispatch: jest.fn(),
         user: {
             logged: false
         }
@@ -22,7 +22,7 @@ describe( 'Test in <AppRouter />', () => {
 
     test( 'must show the marvel component if authenticated', () => {
         contextValue = {
-            dispacth: jest.fn(),
+            dispatch: jest.fn(),
             user: {
                 logged: true,
                 name: 'AlexiSkyline'

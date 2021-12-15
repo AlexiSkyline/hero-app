@@ -6,7 +6,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 describe( 'Test in <DashboardRouters />', () => {
     let contextValue = {
-        dispacth: jest.fn(),
+        dispatch: jest.fn(),
         user: {
             logged: true,
             name: 'AlexiSkyline'
