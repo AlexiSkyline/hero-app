@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { PrivateRoute } from '../../routers/PrivateRoute';
 
 describe( 'Test in <PrivateRoute />', () => {
-    const args = {
+    const rest = {
         location: {
             pathname: '/marvel',
             search: '?q=spider'
@@ -18,7 +18,7 @@ describe( 'Test in <PrivateRoute />', () => {
                 <PrivateRoute 
                     isAuthenticated={ true }
                     component={ () => <span>Ready!</span> }
-                    { ...args }
+                    { ...rest }
                 />
             </MemoryRouter>
         );
@@ -33,7 +33,7 @@ describe( 'Test in <PrivateRoute />', () => {
                 <PrivateRoute 
                     isAuthenticated={ false }
                     component={ () =>  <span>Ready!</span> }
-                    { ...args }
+                    { ...rest }
                 />
             </MemoryRouter>
         );
